@@ -1,7 +1,5 @@
-import { readFileSync } from 'fs';
+import { parseData } from './parsers.js';
 import has from 'lodash/has.js';
-
-export const parseData = (filePath) => JSON.parse(readFileSync(filePath));
 
 export const compareData = (file1, file2) => {
   const arrData1 = parseData(file1);

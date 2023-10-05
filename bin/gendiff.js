@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import { compareData } from '../src/compareJSON.js';
+import { compareData } from '../src/compare.js';
 
 const program = new Command();
 
