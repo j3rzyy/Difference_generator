@@ -5,8 +5,7 @@
         "es2021": true
     },
     "extends": "airbnb-base",
-    "import/extensions": {"js": "always"},
-    //allow the use of the .js extension
+    "import/extensions": "always",
     "parserOptions": {
         "ecmaVersion": "latest"
     },
