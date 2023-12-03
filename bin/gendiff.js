@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 import { Command } from 'commander';
-import compareData from '../src/compare.js';
+import { compareData } from '../src/compare.js';
 
 const program = new Command();
 
@@ -15,4 +15,4 @@ program
     console.log(compareData(filepath1, filepath2)); // передача путей до файлов в виде строки
   });
 
-program.parse();
+program.parse(program.argv);
