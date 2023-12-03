@@ -10,7 +10,7 @@ export default (filePath) => {
       return yaml.load(readFileSync(filePath));
     case '.yml':
       return yaml.load(
-        readFileSync(`${dirname(filePath)}/${basename(filePath, '.yml')}.yaml`),
+        readFileSync(`${dirname(filePath)}/${basename(filePath, '.yml')}.yaml`)
       );
     default:
       throw new Error(`File extension '${extname(filePath)}' not supported!`);

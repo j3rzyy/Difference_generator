@@ -18,7 +18,7 @@ const getNodeCharact = (data1, data2) => {
       return {
         type: 'recursion',
         key,
-        children: getNodeCharact(value1, value2),
+        children: getNodeCharact(value1, value2)
       };
     }
     if (!isEqual(value1, value2)) {
@@ -26,7 +26,7 @@ const getNodeCharact = (data1, data2) => {
         type: 'updated',
         key,
         val1: value1,
-        val2: value2,
+        val2: value2
       };
     }
     return { type: 'same', key, val: value1 };
