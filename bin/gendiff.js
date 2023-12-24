@@ -11,8 +11,8 @@ program
   .version('1.0.0')
   .option('-f, --format <type>', 'output format')
   .arguments('<filepath1> <filepath2>')
-  .action((filepath1, filepath2) => {
-    console.log(compareData(filepath1, filepath2)); // передача путей до файлов в виде строки
+  .action((filepath1, filepath2, { format }) => {
+    console.log(compareData(filepath1, filepath2, format));
   });
 
 program.parse(program.argv);

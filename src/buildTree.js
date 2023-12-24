@@ -2,9 +2,9 @@ import pkg from 'lodash';
 
 const { sortBy, has, isPlainObject, isEqual } = pkg;
 
-const getNodeCharact = (data1, data2) => {
+export const getTree = (data1, data2) => {
   const keys = Object.keys({ ...data1, ...data2 });
-  const sortedKeys = sortBy(keys); // обычный сорт
+  const sortedKeys = sortBy(keys); // sort мутирует исходный массив, sortBy() возвращает новый
   return sortedKeys.map((key) => {
     const value1 = data1[key];
     const value2 = data2[key];
@@ -18,7 +18,7 @@ const getNodeCharact = (data1, data2) => {
       return {
         type: 'recursion',
         key,
-        children: getNodeCharact(value1, value2)
+        children: getTree(value1, value2)
       };
     }
     if (!isEqual(value1, value2)) {
@@ -32,5 +32,3 @@ const getNodeCharact = (data1, data2) => {
     return { type: 'same', key, val: value1 };
   });
 };
-
-export default getNodeCharact;
