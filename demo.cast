@@ -1,0 +1,9 @@
+{"version": 2, "width": 80, "height": 24, "timestamp": 1703452607, "env": {"SHELL": "/bin/bash", "TERM": "xterm-256color"}}
+[0.114779, "o", "\u001b[?2004h\u001b]0;jerzy@jerzyNB: ~/Documents/JS/Gendiff\u0007Gendiff> "]
+[2.572152, "o", "\u001b[7mgendiff -f plain ./__fixtures__/filepath1.json ./__fixtures__/filepath2\u001b[27m\u001b[7m.\u001b[27m\u001b[7mjson\\\u001b[27m"]
+[3.611978, "o", "\u001b[A\r\u001b]0;jerzy@jerzyNB: ~/Documents/JS/Gendiff\u0007Gendiff> gendiff -f plain ./__fixtures__/filepath1.json ./__fixtures__/filepath2.json\\\r\n\u001b[?2004l\r"]
+[3.612066, "o", "\u001b[?2004h> "]
+[6.203938, "o", "\r\n\u001b[?2004l\r"]
+[6.292001, "o", "Property 'common.follow' was added with value: false\r\nProperty 'common.setting2' was removed\r\nProperty 'common.setting3' was updated. From true to null\r\nProperty 'common.setting4' was added with value: 'blah blah'\r\nProperty 'common.setting5' was added with value: [complex value]\r\nProperty 'common.setting6.doge.wow' was updated. From '' to 'so much'\r\nProperty 'common.setting6.ops' was added with value: 'vops'\r\nProperty 'group1.baz' was updated. From 'bas' to 'bars'\r\nProperty 'group1.nest' was updated. From [complex value] to 'str'\r\nProperty 'group2' was removed\r\nProperty 'group3' was added with value: [complex value]\r\n"]
+[6.296587, "o", "\u001b[?2004h\u001b]0;jerzy@jerzyNB: ~/Documents/JS/Gendiff\u0007Gendiff> "]
+[10.409501, "o", "\u001b[?2004l\r\r\nexit\r\n"]
